@@ -1,0 +1,15 @@
+{
+  "name": "node-lightweight-api",
+  "version": "1.0.0",
+  "description": "Lightweight API plugin for express based framworks",
+  "author": "Nich Headlong <nichheadlong@googlemail.com>",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "debug": "2.6.0",
+    "joi": "13.4.0",
+    "lodash": "4.17.4"
+  },
+  "scripts": {
+  }
+}
