@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# set up folders
+
+# copy files as templates
+
+
+mkdir -p src/modules src/modules/actions
+
+mkdir -p src/modules/actions/middleware src/modules/actions/models
+mkdir -p src/modules/actions/helpers src/modules/actions/services
+mkdir -p src/modules/actions/controllers
+
+cp routes.js src/modules/actions/routes.js
+cp middleware/format.js src/modules/actions/middleware
+cp middleware/validate.js src/modules/actions/middleware
+cp controllers/TestController.js src/modules/actions/controllers

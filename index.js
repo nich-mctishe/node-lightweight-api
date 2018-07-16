@@ -52,7 +52,7 @@ module.exports = (express, configeration, operation) => {
   router.use(config.middleware.validate)
   router.use(config.middleware.formatter)
   // run all in the routes.js and connect to express
-  config.methods.parseRoutes(config.routes, router)
+  config.methods.parseRoutes(config.default.routes, router)
   router.use(config.middleware.cache)
   router.use(config.middleware.send)
   // return result

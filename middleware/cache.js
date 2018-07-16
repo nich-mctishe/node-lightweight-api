@@ -28,7 +28,7 @@ module.exports = (req, res, next) => {
   if (req.cache === false) {
     // set the cache with the result, check to make sure no double set
     let result = cache.get(key)
-    if (!result) {
+    if (!result && res.result) {
       cache.set(key, res.result)
     }
 
