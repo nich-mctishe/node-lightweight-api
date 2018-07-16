@@ -67,8 +67,13 @@ module.exports = (express, configeration, operation) => {
 
   // add conf to base
   updateConfig(configeration)
-  req.formats = config.default.formats
-  req.validations = config.default.validations
+
+  // attach conf to request
+  router.use((req, res, next) => {
+    req.formats = config.default.formats
+    req.validations = config.default.validations
+    next()
+  })
 
   if (operation) {
     return operation(config, router)
