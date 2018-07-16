@@ -9,8 +9,8 @@ let config = {
   },
   default: {
     routes: require('./routes'),
-    formats: require('../helpers/format'),
-    validations: require('../helpers/validate')
+    formats: require('./helpers/format'),
+    validations: require('./helpers/validate')
   },
   locations: {
     controllers: './controllers/'
