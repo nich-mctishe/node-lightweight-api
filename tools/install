@@ -15,4 +15,4 @@ cp routes.js ../../modules/actions/routes.js
 cp middleware/format.js ../../modules/actions/middleware
 cp middleware/validate.js ../../modules/actions/middleware
 cp controllers/TestController.js ../../modules/actions/controllers
-cp -R helpers/ ../../modules/actions/helpers
+cp -R helpers/ ../../modules/actions/

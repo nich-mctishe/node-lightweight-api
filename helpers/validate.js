@@ -4,7 +4,7 @@
  * with the Joi instruction as its value
  *
  * @param {Joi} Joi
- * @param {String} index = the stirng being passed in
+ * @param {String} index = the string being passed in
  *
  * @returns {Object|null}
  */
