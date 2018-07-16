@@ -12,5 +12,6 @@
     "node-cache": "4.2.0"
   },
   "scripts": {
+    "postinstall": "tools/install"
   }
 }

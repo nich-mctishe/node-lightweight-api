@@ -7,9 +7,6 @@ let config = {
     cache: require('./middleware/cache'),
     formatter: require('./middleware/format')
   },
-  methods: {
-    parseRoutes: parseRoutes
-  },
   default: {
     routes: require('./routes')
   },
@@ -22,6 +19,10 @@ const parseRoutes = (routes, router) => {
   _.each(routes, (request, url) => {
     router[request.method || 'get'](url, require(config.locations.controllers + request.controller))
   })
+}
+
+config.methods = {
+  parseRoutes: parseRoutes
 }
 
 const updateConfig = (custom) => {
