@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# set up folders
+# sets up folders
 
-# copy files as templates
+# copy files to project route to be used as templates
 
 
 mkdir -p ../../modules ../../modules/actions
