@@ -90,6 +90,7 @@ app.use('/api', api(express, {
     controllers: '../../modules/actions/controllers/'
   },
   default: {
+    routes: require('./routes'),
     validations: require('./modules/actions/helpers/validate'),
     formats: require('./modules/actions/helpers/format')
   }
@@ -110,6 +111,7 @@ app.use('/api', api(express, {
     controllers: '../../modules/actions/controllers/'
   },
   default: {
+    routes: require('./routes'),
     validations: require('./modules/actions/helpers/validate'),
     formats: require('./modules/actions/helpers/format')
   }
