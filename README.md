@@ -142,3 +142,6 @@ Out of the box, there are 4 middleware components.
 ## Controllers
 
 the controllers will run the functionality and their default location can be reset from locations.controllers in the config. postinstall provides a clean place to store them along with their affiliated helpers and services. The controller locatio will need to be updated in the config when you do that.
+
+Please note, that the reference to the controller must be set as relative to the package in the
+node_modules folder
