@@ -12,7 +12,5 @@ mkdir -p ../../modules/actions/helpers ../../modules/actions/services
 mkdir -p ../../modules/actions/controllers
 
 cp routes.js ../../modules/actions/routes.js
-cp middleware/format.js ../../modules/actions/middleware
-cp middleware/validate.js ../../modules/actions/middleware
 cp controllers/TestController.js ../../modules/actions/controllers
 cp -R helpers/ ../../modules/actions/
